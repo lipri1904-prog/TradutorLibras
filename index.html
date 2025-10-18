@@ -13,7 +13,7 @@ body {
   flex-direction: column;
   align-items: center;
   font-family: Arial, sans-serif;
-  background: linear-gradient(to right, #241535, #6e08a8);
+  background: linear-gradient(to right, #ede7f0, #ede7f0);
   min-height: 100vh;
   padding-top: 50px;
 }
@@ -33,7 +33,7 @@ body {
 }
 
 .textArea:focus {
-  box-shadow: 0 0 20px #007BFF;
+  box-shadow: 0 0 20px #7cacf3;
 }
 
 button {
@@ -43,20 +43,21 @@ button {
   border-radius: 50px;
   border: none;
   cursor: pointer;
-  background-color: #e0b528;
+  background-color: #288de0;
   color: white;
   transition: all 0.3s;
 }
 
 button:hover {
-  background-color: #e06e11;
+  background-color: #421183;
 }
 
 /* Parágrafo estilizado */
 .paragrafoTexto {
   position: relative;
+  right: 20px;
   margin-top: 20px;
-  background-color: rgba(255,255,255,0.9);
+  background-color: rgba(29, 104, 216, 0.9);
   padding: 15px 50px 15px 20px;
   border-radius: 15px;
   font-size: 18px;
@@ -68,11 +69,11 @@ button:hover {
 /* Botão de excluir no canto do parágrafo */
 .excluirBtn {
   position: absolute;
-  top: 10px;
-  right: 15px;
+  top: -5px;
+  right: -43px;
   background: #FF4136;
   border: none;
-  color: white;
+  color: rgb(255, 255, 255);
   border-radius: 50%;
   width: 25px;
   height: 25px;
@@ -146,4 +147,3 @@ btn.addEventListener('click', () => {
 
 </body>
 </html>
-
