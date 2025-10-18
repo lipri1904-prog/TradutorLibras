@@ -23,19 +23,6 @@ body{
 .textArea:focus {
   box-shadow: 0 0 20px #007BFF;
 }
-body {
-  margin: 0;
-  padding: 0;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  font-family: Arial, sans-serif;
-  background: #121212; /* fundo escuro */
-  color: #ffffff; /* cor padrão do texto */
-  min-height: 100vh;
-  padding-top: 50px;
-}
-
 .textArea {
   width: 80%;
   max-width: 600px;
