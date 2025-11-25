@@ -1,0 +1,167 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Arial, sans-serif;
+}
+
+/* Fundo do site */
+body {
+  background: radial-gradient(circle at top left, #9bb9ff, #5a73d8, #2e3e80);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  padding: 40px 20px;
+}
+
+
+/* Card central */
+.container {
+  width: 100%;
+  max-width: 750px;
+  background: #ffffffcc;
+  backdrop-filter: blur(20px);
+  padding: 35px;
+  border-radius: 25px;
+  box-shadow:
+    8px 8px 20px rgba(0, 0, 0, 0.15),
+    -8px -8px 20px rgba(255, 255, 255, 0.6);
+  animation: fade 0.4s ease;
+}
+
+
+/* Animação */
+@keyframes fade {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+h1 {
+  text-align: center;
+  color: #3b6df2;
+  margin-bottom: 25px;
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.labelTexto {
+  display: block;
+  font-size: 18px;
+  margin-bottom: 8px;
+}
+
+/* Área de digitação */
+.textArea {
+  width: 100%;
+  height: 140px;
+  padding: 15px;
+  border-radius: 12px;
+  border: 2px solid #c8d6ff;
+  font-size: 18px;
+  outline: none;
+  transition: 0.3s;
+  resize: none;
+}
+
+.textArea:focus {
+  border-color: #4e82ff;
+  box-shadow: 0 0 10px rgba(78, 130, 255, 0.4);
+}
+
+/* Botão */
+button {
+  margin-top: 20px;
+  width: 100%;
+  padding: 15px;
+  font-size: 20px;
+  border-radius: 12px;
+  border: none;
+  cursor: pointer;
+  background: #4e82ff;
+  color: white;
+  transition: 0.25s;
+}
+
+button:hover {
+  background: #335edc;
+}
+
+/* Blocos de texto traduzido */
+.textoItem {
+  position: relative;
+  background: #f3f7ff;
+  padding: 18px 20px;
+  border-left: 6px solid #4e82ff;
+  border-radius: 12px;
+  margin-top: 20px;
+  animation: fade 0.4s ease;
+}
+
+/* Botão de apagar */
+.deleteBtn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background: #ff4d4d;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+  line-height: 26px;
+  text-align: center;
+  transition: 0.25s;
+}
+
+.deleteBtn:hover {
+  background: #d63b3b;
+}
+
+/* Ajustes só para celular */
+@media (max-width: 600px) {
+
+  body {
+    padding: 15px; /* cria espaço nas laterais sem afetar PC */
+  }
+
+  .container {
+    max-width: 100%;
+    padding: 20px;
+    border-radius: 16px;
+  }
+
+  .textArea {
+    font-size: 16px;
+    padding: 12px;
+  }
+
+  button {
+    font-size: 18px;
+    padding: 10px 14px;
+  }
+
+  .textoItem {
+    padding: 15px;
+    margin-bottom: 12px;
+    flex-direction: column; /* deixa o botão de excluir respirar */
+    align-items: flex-start;
+  }
+
+  .deleteBtn {
+    width: 28px;
+    height: 28px;
+    font-size: 18px;
+    margin-top: 8px;
+  }
+
+  .darkModeBtn {
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+    top: 12px;
+    right: 12px;
+  }
+}
